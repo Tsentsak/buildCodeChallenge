@@ -29,8 +29,8 @@ if the application is reloaded, we don’t expect to see the same images.<br />
 brownie points. (ChangeDetectionStrategy, modern image format webp (photo.effects.ts))
 
 ## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+npm install<br />
+npm run start or Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
 ## Build
 
