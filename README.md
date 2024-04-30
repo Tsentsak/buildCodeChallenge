@@ -14,17 +14,17 @@ and displays them on the screen. There is a recorded demo here to provide a prev
 of what is expected from the exercise: https://streamable.com/fkebp
 
 
-App should fit to the screen (no vertical/horizontal scrolling).
-• Images list should display 30 images from the API using the store. 
-• Image list should vertically scroll.
-• Clicking on an image should select and display it on the right side.
-• Clear button should clear the image selection.
-• Not seen in demo: Include functionality to add new images to the list from your
+App should fit to the screen (no vertical/horizontal scrolling).<br />
+• Images list should display 30 images from the API using the store. <br />
+• Image list should vertically scroll.<br />
+• Clicking on an image should select and display it on the right side.<br />
+• Clear button should clear the image selection.<br />
+• Not seen in demo: Include functionality to add new images to the list from your<br />
 local hard drive.
 o Due to the limited time for this challenge, the goal of this feature is to
 enable users to upload images directly from local environment and add
 them to the store, we don’t look for persisting the images, meaning that
-if the application is reloaded, we don’t expect to see the same images.
+if the application is reloaded, we don’t expect to see the same images.<br />
 • Feel free to optimize or improve any aspects of the application for additional
 brownie points. (ChangeDetectionStrategy, modern image format webp (photo.effects.ts))
 
