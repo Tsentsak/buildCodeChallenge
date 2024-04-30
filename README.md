@@ -4,7 +4,6 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ImgChallenge is a responsive APP, the result of a code challenge for an Angular Front End Position at Build Global.
 
-We are using: Ngrx, Bootstrap. Rxjs and Angular to solve the next AC:
 
 Evaluation topic
 The interviewee will develop an Angular application using Ngrx. Feel free to use any
