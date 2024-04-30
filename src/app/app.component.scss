@@ -1,0 +1,40 @@
+.main-frame {
+  height: 100vh;
+  overflow: hidden;
+  padding: 5px;
+}
+
+img {
+  max-width: 90%;
+  max-height: 300px;
+}
+
+.left-col img {
+  cursor: pointer;
+}
+
+.left-col, .right-col {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.right-content {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.file-input {
+  display: none;
+}
+
+@media (max-height: 450px) {
+  .right-content {
+    height: auto;
+    overflow-y: auto;
+  }
+
+  .no-image {
+    height: 100%;
+    overflow-y: scroll;
+  }
+}

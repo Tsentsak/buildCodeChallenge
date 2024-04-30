@@ -1,0 +1,29 @@
+<div class="container-fluid">
+  <div class="container">
+    <div class="row main-frame">
+      <div class="col border left-col rounded-start-4">
+         <div  class="d-flex flex-column align-items-center justify-content-center flex-wrap ">
+            <input type="file" class="file-input" (change)="onFileSelected($event)" #fileUpload>
+            <button type="button" class="btn btn-primary mt-3" (click)="fileUpload.click()">Add local photo</button>
+            <img *ngFor="let photo of allPhotos$ | async" src="{{photo.download_url}}" (click)="selectePhoto(photo)" class="rounded img-fluid mt-3" alt="{{photo.author}} ">
+        </div>
+      </div>
+      <div class="col border border-start-0 rounded-end-4 right-col">
+        <div class="d-flex flex-column align-items-center justify-content-center flex-wrap right-content" [ngClass]="{'no-image': this.selectedPhoto === null}">
+           <div *ngIf="this.selectedPhoto === null else showSelectedPhoto" class="text-center">No image selected</div>
+            <ng-template #showSelectedPhoto>
+              <div class="card text-center border-0">
+                <div class="card-body">
+                  <h6 class="card-title">{{this.selectedPhoto?.author}}</h6>
+                </div>
+                <img src="{{ this.selectedPhoto?.download_url }}" class="rounded img-fluid card-img-top" alt="{{this.selectedPhoto?.author}}">
+                <div class="card-body">
+                  <button type="button" class="btn btn-primary mt-3" (click)="clearSelection()">Clear</button>
+                </div>
+              </div>
+            </ng-template>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
